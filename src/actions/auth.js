@@ -3,6 +3,8 @@ import { firebase, googleAuthProvider } from '../firebase/firebase-config'
 
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {
+    dispatch(startLoading())
+
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password) // signin on firebase
@@ -11,6 +13,9 @@ export const startLoginEmailPassword = (email, password) => {
       })
       .catch((err) => {
         console.log(err)
+      })
+      .finally(() => {
+        dispatch(finishLoading())
       })
   }
 }
@@ -45,5 +50,17 @@ export const login = (uid, displayName) => {
   return {
     type: types.login,
     payload: { uid, displayName },
+  }
+}
+
+export const startLoading = () => {
+  return {
+    type: types.uiStartLoading,
+  }
+}
+
+export const finishLoading = () => {
+  return {
+    type: types.uiFinishLoading,
   }
 }
