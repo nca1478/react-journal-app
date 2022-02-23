@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import { useForm } from '../../hooks/useForm'
-import validator from 'validator'
-import { removeError, setError } from '../../actions/ui'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import validator from 'validator'
+import { useForm } from '../../hooks/useForm'
+import { removeError, setError } from '../../actions/ui'
 import { startRegisterWithEmailPasswordName } from '../../actions/auth'
 
 export const RegisterScreen = () => {
