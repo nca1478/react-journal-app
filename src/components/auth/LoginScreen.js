@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { startGoogleLogin, startLoginEmailPassword } from '../../actions/auth'
@@ -7,10 +7,15 @@ import { useForm } from '../../hooks/useForm'
 export const LoginScreen = () => {
   const dispatch = useDispatch()
   const [formValues, handleInputChange] = useForm({
-    email: 'pepe@trueno.com',
-    password: '123',
+    email: '',
+    password: '',
   })
   const { email, password } = formValues
+  const emailRef = useRef()
+
+  useEffect(() => {
+    emailRef.current.focus()
+  }, [])
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -30,6 +35,7 @@ export const LoginScreen = () => {
           className="auth__input"
           placeholder="Email"
           name="email"
+          ref={emailRef}
           autoComplete="off"
           value={email}
           onChange={handleInputChange}
