@@ -46,10 +46,24 @@ export const startGoogleLogin = () => {
   }
 }
 
+export const startLogout = () => {
+  return async (dispatch) => {
+    await firebase.auth().signOut()
+
+    dispatch(logout())
+  }
+}
+
 export const login = (uid, displayName) => {
   return {
     type: types.login,
     payload: { uid, displayName },
+  }
+}
+
+export const logout = () => {
+  return {
+    type: types.logout,
   }
 }
 
