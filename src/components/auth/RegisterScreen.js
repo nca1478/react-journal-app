@@ -27,7 +27,6 @@ export const RegisterScreen = () => {
 
     if (isFormValid()) {
       dispatch(startRegisterWithEmailPasswordName(email, password, name))
-      console.log('Correct Form')
     }
   }
 

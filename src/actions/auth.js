@@ -1,5 +1,6 @@
 import { types } from '../types/types'
 import { firebase, googleAuthProvider } from '../firebase/firebase-config'
+import Swal from 'sweetalert2'
 
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {
@@ -7,12 +8,12 @@ export const startLoginEmailPassword = (email, password) => {
 
     firebase
       .auth()
-      .signInWithEmailAndPassword(email, password) // signin on firebase
+      .signInWithEmailAndPassword(email, password) // Sign In on firebase
       .then(({ user }) => {
         dispatch(login(user.uid, user.displayName))
       })
       .catch((err) => {
-        console.log(err)
+        Swal.fire('Error', err.message, 'error')
       })
       .finally(() => {
         dispatch(finishLoading())
@@ -24,13 +25,13 @@ export const startRegisterWithEmailPasswordName = (email, password, name) => {
   return (dispatch) => {
     firebase
       .auth()
-      .createUserWithEmailAndPassword(email, password) // create user on firebase
+      .createUserWithEmailAndPassword(email, password) // Create user on firebase
       .then(async ({ user }) => {
-        await user.updateProfile({ displayName: name }) // update displayName by name on firebase
+        await user.updateProfile({ displayName: name }) // Update displayName by name on firebase
         dispatch(login(user.uid, user.displayName))
       })
       .catch((err) => {
-        console.log(err)
+        Swal.fire('Error', err.message, 'error')
       })
   }
 }
@@ -39,9 +40,12 @@ export const startGoogleLogin = () => {
   return (dispatch) => {
     firebase
       .auth()
-      .signInWithPopup(googleAuthProvider) // google signin on firebase
+      .signInWithPopup(googleAuthProvider) // Google signin on firebase
       .then(({ user }) => {
         dispatch(login(user.uid, user.displayName))
+      })
+      .catch((err) => {
+        Swal.fire('Error', err.message, 'error')
       })
   }
 }
