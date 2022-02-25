@@ -13,7 +13,10 @@ export const JournalEntry = (note) => {
   }
 
   return (
-    <div className="journal__entry pointer" onClick={handleEntryClick}>
+    <div
+      className="journal__entry pointer animate__animated animate__fadeIn animate__fast"
+      onClick={handleEntryClick}
+    >
       {url && (
         <div
           className="journal__entry-picture"
