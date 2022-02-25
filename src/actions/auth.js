@@ -1,11 +1,11 @@
 import { types } from '../types/types'
 import { firebase, googleAuthProvider } from '../firebase/firebase-config'
 import Swal from 'sweetalert2'
+import { noteLogout } from './notes'
 
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {
     dispatch(startLoading())
-
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password) // Sign In on firebase
@@ -53,8 +53,8 @@ export const startGoogleLogin = () => {
 export const startLogout = () => {
   return async (dispatch) => {
     await firebase.auth().signOut()
-
     dispatch(logout())
+    dispatch(noteLogout())
   }
 }
 
