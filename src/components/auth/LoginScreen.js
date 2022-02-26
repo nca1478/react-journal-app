@@ -29,12 +29,12 @@ export const LoginScreen = () => {
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast">
-      <h3 className="auth__title">Login</h3>
+      <h2 className="auth__title text-center">Journal App</h2>
       <form onSubmit={handleLogin}>
         <input
           type="text"
           className="auth__input"
-          placeholder="Email"
+          placeholder="Enter email"
           name="email"
           ref={emailRef}
           autoComplete="off"
@@ -45,7 +45,7 @@ export const LoginScreen = () => {
         <input
           type="password"
           className="auth__input"
-          placeholder="Password"
+          placeholder="Enter password"
           name="password"
           value={password}
           onChange={handleInputChange}
