@@ -29,7 +29,11 @@ export const AppRouter = () => {
   }, [dispatch, setLoading, setIsLoggedIn])
 
   if (loading) {
-    return <h1>Loading...</h1>
+    return (
+      <div className="preloader-container">
+        <div className="preloader"></div>
+      </div>
+    )
   }
 
   return (
