@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { activeNote, startDeleteNote } from '../../actions/notes'
 import { useForm } from '../../hooks/useForm'
+import { Footer } from '../journal/Footer'
 import { NotesAppBar } from './NotesAppBar'
 
 export const NotesScreen = () => {
@@ -60,6 +61,7 @@ export const NotesScreen = () => {
       <button className="btn btn-danger" onClick={handleDelete}>
         Delete
       </button>
+      <Footer />
     </div>
   )
 }
