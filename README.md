@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Journal App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Journal App` is a react web application that allows you to save notes of what you do daily.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- SPA `(Simple Page Application)`.
+- Notes list.
+- `CRUD` features.
+- Local login auth.
+- `Google login` auth.
+- Register account form.
+- Backend and database is provided by `Google Firebase`.
+- Images are hosted on `Cloudinary`.
+- Public and Private Routes.
+- State Manage Component through `useState` hook.
+- State Manage App through `Redux`.
+- For handling forms, i use `useForm` custom hook.
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The purpose of this project is to practice the web technologies shown below.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- HTML5.
+- CSS3 (Flexbox and Media Queries).
+- Sass.
+- ReactJS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## React Technologies
 
-### `npm run build`
+- [Create React App](https://create-react-app.dev/)
+- [React Redux](https://react-redux.js.org/)
+- [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Development tools and other Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Animate.css](https://animate.style/)
+- [Cloudinary](https://cloudinary.com/)
+- [Font Awesome 6](https://fontawesome.com/v6/search)
+- [Google Firebase](https://firebase.google.com/)
+- [Nodejs](https://nodejs.org/en/)
+- [Node Sass](https://www.npmjs.com/package/node-sass)
+- [Redux](https://redux.js.org/)
+- [Sass](https://sass-lang.com/)
+- [Sweet Alert2](https://sweetalert2.github.io/)
+- [Vscode](https://code.visualstudio.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Demo
 
-### `npm run eject`
+[Journal App](https://google.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Requirements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Nodejs v14 or better.
+- React 17.0.2 or better.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> npm install
 
-## Learn More
+## Run the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Enter file
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> /src/index.js
