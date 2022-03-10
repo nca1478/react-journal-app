@@ -49,7 +49,7 @@
 
 ## Demo
 
-[Journal App](https://google.com)
+[Journal App](https://journal-app-njca.netlify.app)
 
 ## Requirements
 
