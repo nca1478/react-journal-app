@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { NotesScreen } from '../notes/NotesScreen'
-import { Footer } from './Footer'
 import { NothingSelected } from './NothingSelected'
 import { Sidebar } from './Sidebar'
 

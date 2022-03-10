@@ -4,18 +4,18 @@
 
 ## Features
 
-- SPA `(Simple Page Application)`.
+- SPA (Simple Page Application).
 - Notes list.
-- `CRUD` features.
+- CRUD features.
 - Local login auth.
-- `Google login` auth.
+- Google login auth.
 - Register account form.
-- Backend and database is provided by `Google Firebase`.
-- Images are hosted on `Cloudinary`.
+- Backend and database is provided by Google Firebase.
+- Images are hosted on Cloudinary.
 - Public and Private Routes.
-- State Manage Component through `useState` hook.
-- State Manage App through `Redux`.
-- For handling forms, i use `useForm` custom hook.
+- State Manage Component through useState hook.
+- State Manage App through Redux.
+- For handling forms, i use useForm custom hook.
 
 ## General Information
 
