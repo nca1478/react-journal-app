@@ -6,3 +6,13 @@
   padding-bottom: 15px;
   text-align: center;
 }
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  transition: color 0.3s ease;
+  color: darken($color: white, $amount: 20);
+}
