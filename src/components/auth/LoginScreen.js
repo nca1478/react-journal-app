@@ -34,7 +34,7 @@ export const LoginScreen = () => {
         <input
           type="text"
           className="auth__input"
-          placeholder="Enter email"
+          placeholder="Ingrese email"
           name="email"
           ref={emailRef}
           autoComplete="off"
@@ -45,7 +45,7 @@ export const LoginScreen = () => {
         <input
           type="password"
           className="auth__input"
-          placeholder="Enter password"
+          placeholder="Ingrese contraseña"
           name="password"
           value={password}
           onChange={handleInputChange}
@@ -60,7 +60,6 @@ export const LoginScreen = () => {
         </button>
 
         <div className="auth__social-networks">
-          <p>Login with Social Networks</p>
           <div className="google-btn" onClick={handleHandleGoogleLogin}>
             <div className="google-icon-wrapper">
               <img
@@ -70,13 +69,13 @@ export const LoginScreen = () => {
               />
             </div>
             <p className="btn-text">
-              <b>Sign in with google</b>
+              <b>Login con Google</b>
             </p>
           </div>
         </div>
 
         <Link to="/auth/register" className="link">
-          Create new account
+          Crear nueva cuenta
         </Link>
       </form>
     </div>

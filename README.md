@@ -1,40 +1,39 @@
 # Journal App
 
-`Journal App` is a react web application that allows you to save notes of what you do daily.
+`Journal App` es una aplicación web desarrollada en React que te permite guardar notas de lo que haces a diario.
 
 ## Features
 
-- SPA (Simple Page Application).
-- Notes list.
-- CRUD features.
-- Local login auth.
-- Google login auth.
-- Register account form.
-- Backend and database is provided by Google Firebase.
-- Images are hosted on Cloudinary.
-- Public and Private Routes.
-- State Manage Component through useState hook.
-- State Manage App through Redux.
-- For handling forms, i use useForm custom hook.
+- SPA (Aplicación de Página Simple).
+- Lista de notas.
+- Tareas CRUD.
+- Autenticación Local.
+- Autenticación con Google.
+- Formulario de registro de cuenta.
+- Backend y DB es provista por Google Firebase.
+- Las imágenes están alojadas en Cloudinary.
+- Rutas Publicas y Privadas.
+- Gestión de estados con el hook useState y redux.
+- Manejo de formularios con el hook personalizado useForm.
 
-## General Information
+## Información General
 
-- The purpose of this project is to practice the web technologies shown below.
+- El propósito de este proyecto es practicar las tecnologías web que se muestran a continuación.
 
-## Tech Stack
+## Tecnologías (Tech Stack)
 
 - HTML5.
-- CSS3 (Flexbox and Media Queries).
+- CSS3 (Flexbox y Media Queries).
 - Sass.
 - ReactJS.
 
-## React Technologies
+## Tecnologías de React
 
 - [Create React App](https://create-react-app.dev/)
 - [React Redux](https://react-redux.js.org/)
 - [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
 
-## Development tools and other Technologies
+## Herramientas de Desarrollo y otras tecnologías
 
 - [Animate.css](https://animate.style/)
 - [Cloudinary](https://cloudinary.com/)
@@ -51,16 +50,16 @@
 
 [Journal App](https://journal-app-njca.netlify.app)
 
-## Requirements
+## Requerimientos
 
-- Nodejs v14 or better.
-- React 17.0.2 or better.
+- Nodejs v14 o superior.
+- React 17.0.2 o superior.
 
-## Installation
+## Instalación
 
 > npm install
 
-## Run the app
+## Ejecutar la aplicación
 
 > npm start
 

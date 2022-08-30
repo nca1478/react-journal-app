@@ -33,15 +33,16 @@ export const RegisterScreen = () => {
   const isFormValid = () => {
     let error = ''
     if (name.trim().length === 0) {
-      error = 'Name is required'
+      error = 'Nombre es requerido'
     } else if (!validator.isEmail(email)) {
-      error = 'Email is not valid'
+      error = 'Email no es válido'
     } else if (password.trim().length < 1) {
-      error = 'Password is required'
+      error = 'Contraseña es requerida'
     } else if (password2.trim().length < 1) {
-      error = 'Password confirm is required'
+      error = 'Contraseña2 es requerida'
     } else if (password !== password2 || password.length < 5) {
-      error = 'Password should be at least 6 characters and match each other'
+      error =
+        'La contraseña debe tener al menos 6 caracteres y coincidir entre sí'
     }
 
     if (error.length > 0) {
@@ -55,13 +56,13 @@ export const RegisterScreen = () => {
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast">
-      <h3 className="auth__title text-center">Create an Account</h3>
+      <h3 className="auth__title text-center">Crear una cuenta</h3>
       <form onSubmit={handleRegister}>
         {msgError && <div className="auth__alert-error">{msgError}</div>}
         <input
           type="text"
           className="auth__input"
-          placeholder="Name"
+          placeholder="Nombre"
           name="name"
           ref={nameRef}
           autoComplete="off"
@@ -82,7 +83,7 @@ export const RegisterScreen = () => {
         <input
           type="password"
           className="auth__input"
-          placeholder="Password"
+          placeholder="Contraseña"
           name="password"
           value={password}
           onChange={handleInputChange}
@@ -91,18 +92,18 @@ export const RegisterScreen = () => {
         <input
           type="password"
           className="auth__input"
-          placeholder="Confirm password"
+          placeholder="Confirmar Contraseña"
           name="password2"
           value={password2}
           onChange={handleInputChange}
         />
 
         <button type="submit" className="btn btn-primary btn-block mb-5">
-          Register
+          Registrar
         </button>
 
         <Link to="/auth/login" className="link">
-          Already registered?
+          ¿Ya está registrado?
         </Link>
       </form>
     </div>

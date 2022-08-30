@@ -42,7 +42,7 @@ export const startSaveNote = (note) => {
 
     Swal.fire({
       icon: 'success',
-      title: 'Note has been saved',
+      title: 'La nota ha sido guardada',
       timer: 2000,
     })
   }
@@ -53,8 +53,8 @@ export const startUploading = (file) => {
     const { active: activeNote } = getState().notes
 
     Swal.fire({
-      title: 'Uploading...',
-      text: 'Please wait...',
+      title: 'Subiendo...',
+      text: 'Por favor espere...',
       allowOutsideClick: false,
       showConfirmButton: false,
       willOpen: () => {

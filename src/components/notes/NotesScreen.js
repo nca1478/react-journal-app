@@ -37,7 +37,7 @@ export const NotesScreen = () => {
         <input
           type="text"
           name="title"
-          placeholder="Some awesome title"
+          placeholder="Algún título asombroso"
           className="notes__title-input"
           value={title}
           onChange={handleInputChange}
@@ -46,7 +46,7 @@ export const NotesScreen = () => {
 
         <textarea
           name="body"
-          placeholder="What happened today"
+          placeholder="Que está pasando hoy"
           className="notes__textarea"
           value={body}
           onChange={handleInputChange}
@@ -59,7 +59,7 @@ export const NotesScreen = () => {
         )}
       </div>
       <button className="btn btn-danger" onClick={handleDelete}>
-        Delete
+        Eliminar
       </button>
       <Footer />
     </div>

@@ -24,13 +24,13 @@ export const Sidebar = () => {
           <span> {name}</span>
         </h3>
         <button className="btn" onClick={handleLogout}>
-          Logout
+          Salir
         </button>
       </div>
 
       <div className="journal__new-entry" onClick={handleAddNew}>
         <i className="fa-regular fa-calendar fa-5x"></i>
-        <p className="mt-5">New Entry</p>
+        <p className="mt-5">Nueva Entrada</p>
       </div>
 
       <JournalEntries />

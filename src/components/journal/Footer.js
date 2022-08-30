@@ -3,7 +3,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <p>
-        Copyright &copy; 2022 - Developed by:{' '}
+        Copyright &copy; 2022 - Desarrollado por:{' '}
         <a
           href="https://nelsoncadenas.netlify.app/"
           target="_blank"

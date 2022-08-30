@@ -6,9 +6,8 @@ export const NothingSelected = () => {
     <>
       <div className="nothing__main-content">
         <p>
-          Select something
-          <br />
-          or create an entry!
+          Seleccionar algo
+          <br />o crear una entrada!
         </p>
 
         <i className="fa-regular fa-star fa-4x mt-5"></i>
